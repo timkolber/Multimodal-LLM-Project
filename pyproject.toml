@@ -5,8 +5,8 @@ description = "Default template for PDM package"
 authors = [
     {name = "Tim Kolber", email = "tim.kolber@stud.uni-heidelberg.de"},
 ]
-dependencies = []
-requires-python = ">=3.11"
+dependencies = ["pandas>=2.2.3", "scikit-learn>=1.6.1", "transformers>=4.49.0", "setuptools>=76.1.0", "wandb>=0.19.8", "torch>=2.6.0", "torchvision>=0.21.0", "torchaudio>=2.6.0", "triton>=3.2.0", "unsloth[cu124-ampere-torch260] @ git+https://github.com/unslothai/unsloth.git", "flash-attn>=2.7.4.post1", "evaluate>=0.4.3", "rouge-score>=0.1.2"]
+requires-python = "<3.13,>=3.11"
 readme = "README.md"
 license = {text = "MIT"}
 
@@ -17,3 +17,6 @@ build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = true
+
+[tool.pdm.resolution]
+allow-prereleases = true
