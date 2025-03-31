@@ -1,5 +1,7 @@
 # Project: Learning to write notes in EHR with LLaMA
 
+The data and the trained model are not included in this repository. 
+
 ## Usage
 
 - Install Python 3.11
